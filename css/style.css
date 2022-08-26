@@ -1,0 +1,113 @@
+    @charset "UTF-8";
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        animation: gradient 15s ease infinite;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e,#23a6d5, #23d5ab) no-repeat;
+        background-size: 300% 300%;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        height: 100vh;
+    }
+
+    #container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        height: 70vh;
+        display: grid;
+        min-width: 400px;
+        align-items: center;
+        border-radius: 15px;
+        justify-content: center;
+        align-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.477);
+        box-shadow: 5px 9px 10px 0px rgba(0, 0, 0, 0.322);
+    }
+
+    #img-perfil{
+        position: relative;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 5px 9px 12px 0px rgba(0, 0, 0, 0.322);
+        border: 2px solid rgba(211, 211, 211, 0.872);
+    }
+
+    .ipt{
+        margin-top: -79px;
+    }
+
+    i{
+        width: 50px;
+        height: 40px;
+        display: inline-block;
+        vertical-align: middle;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    #img-user{
+        background: url(../images/perfil.png) no-repeat center center;
+        background-size: 20px;   
+        background-color: #E7E7E7;
+    }
+
+    #img-password{
+        background: url(../images/senha.png) no-repeat center center;
+        background-size: 20px;
+        background-color: #E7E7E7;
+    }
+
+    input[type="text"]{
+        margin-left: -5px;
+        height: 40px;
+        width: 250px;
+        border: none;
+        outline: none;
+        line-height: 32px;
+        padding-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    button{
+        height: 40px;
+        width: 200px;
+        border: none;
+        font-size: 10pt;
+        font-family: sans-serif;
+        border-radius: 15px;
+        justify-self: center;
+        background-color: rgb(240, 248, 255);
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: rgba(227, 235, 243, 0.895);
+    }
+
+    @keyframes gradient {
+        0%{
+            background-position: 0 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0 50%;
+        }
+    }
