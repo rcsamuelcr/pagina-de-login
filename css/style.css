@@ -22,10 +22,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
         
-        height: 70vh;
+        height: 550px;
         display: grid;
         min-width: 400px;
-        align-items: center;
+        align-items: stretch;
         border-radius: 15px;
         justify-content: center;
         align-content: space-evenly;
